@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest</title>
+    <link rel="icon" href="assets/img/pint_logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo" width="48px" href="">
+          <a href="#">
+            <img src="assets/img/logo.png" />
+          </a>
+        </div>
+
+        <div class="menu">
+          <a class="active" href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Create</a>
+        </div>
+
+        <div class="input-group">
+          <div class="finder">
+            <svg
+              aria-label="Search icon"
+              class="BNH gUZ U9O kVc"
+              height="16"
+              role="img"
+              viewBox="0 0 24 24"
+              width="16"
+            >
+              <path
+                d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24"
+              ></path>
+            </svg>
+          </div>
+          <input class="input-finder" type="search" placeholder="Search" />
+        </div>
+
+        <div class="icon">
+          <button
+            onclick="show_notification()"
+            class="icon-notification"
+          ></button>
+          <button onclick="show_message()" class="icon-message"></button>
+          <button class="profil" href="">
+            <img src="assets/icons/user.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="dropdown" href="">
+          <img src="assets/icons/arrow-down.svg" alt="" />
+        </div>
+
+        <!-- popup -->
+        <!-- popup notification -->
+        <div class="notification" id="notification">
+          <div class="header"><p>Updates</p></div>
+          <ul>
+            <li id="content-notification" href="https://youtube.com/">
+              <div class="content">
+                <div class="content1">
+                  <p>Your home feed has new Pins <span>9mo</span></p>
+                  <div class="detail">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="content2">
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </li>
+            <li id="content-notification">
+              <div class="content">
+                <div class="content1">
+                  <p>Your home feed has new Pins <span>9mo</span></p>
+                  <div class="detail">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="content2">
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </li>
+            <li id="content-notification">
+              <div class="content">
+                <div class="content1">
+                  <p>Your home feed has new Pins <span>9mo</span></p>
+                  <div class="detail">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="content2">
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </li>
+            <li id="content-notification">
+              <div class="content">
+                <div class="content1">
+                  <p>Your home feed has new Pins <span>9mo</span></p>
+                  <div class="detail">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="content2">
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </li>
+            <li id="content-notification">
+              <div class="content">
+                <div class="content1">
+                  <p>Your home feed has new Pins <span>9mo</span></p>
+                  <div class="detail">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="content2">
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://i.pinimg.com/originals/49/35/7c/49357c39ef5e5ca66481a1a57c0a634d.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- popup message -->
+        <div class="message" id="message">
+          <div class="header">
+            <div class="header1">Inbox</div>
+            <div class="header2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="content-message">
+            <div class="input-group-message">
+              <div class="finder">
+                <svg
+                  aria-label="Search icon"
+                  class="BNH gUZ U9O kVc"
+                  height="16"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="16"
+                >
+                  <path
+                    d="M10 16a6 6 0 1 1 .01-12.01A6 6 0 0 1 10 16m13.12 2.88-4.26-4.26a10 10 0 1 0-4.24 4.24l4.26 4.26a3 3 0 1 0 4.24-4.24"
+                  ></path>
+                </svg>
+              </div>
+              <input type="search" placeholder="Search by name or email" />
+            </div>
+
+            <div class="new-message">
+              <div class="new">
+                <svg
+                  aria-label="Compose new message"
+                  class="ePF gUZ U9O kVc"
+                  height="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                >
+                  <path
+                    d="M23.3458 0.633387C22.4924 -0.211454 21.1083 -0.211454 20.2549 0.633387L18.7363 2.13571L21.8272 5.1931L23.3727 3.66441C24.2268 2.82023 24.1999 1.47756 23.3458 0.633387ZM17.762 3.10349L9.39669 11.3893L8.35883 15.6412L12.4876 14.4467L20.8963 6.23791L17.762 3.10349ZM4.70156 1.01393C2.10496 1.01393 0 3.16788 0 5.82491V19.1887C0 21.8458 2.10496 23.9997 4.70156 23.9997H18.2838C20.8804 23.9997 22.9854 21.8458 22.9854 19.1887V14.074C22.9854 13.1884 22.2838 12.5068 21.4182 12.5068C20.5527 12.5068 19.851 13.1884 19.851 14.074V19.1887C19.851 20.0744 19.1494 20.7924 18.2838 20.7924H4.70156C3.83603 20.7924 3.13437 20.0744 3.13437 19.1887V5.82491C3.13437 4.93923 3.83603 4.22125 4.70156 4.22125H9.92552C10.7911 4.22125 11.4927 3.50326 11.4927 2.61759C11.4927 1.73191 10.7911 1.01393 9.92552 1.01393H4.70156Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="new-text">New message</div>
+            </div>
+
+            <div class="invite">
+              <div class="invite-icon">
+                <svg
+                  aria-label="Invite your friends"
+                  class="Uvi gUZ U9O kVc"
+                  height="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                >
+                  <path
+                    d="M16.5 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8m0 1A7.5 7.5 0 0 0 9 19.5V21h15v-1.5a7.5 7.5 0 0 0-7.5-7.5M9.25 9.5H6.5V6.75a1.25 1.25 0 0 0-2.5 0V9.5H1.25a1.25 1.25 0 0 0 0 2.5H4v2.75a1.25 1.25 0 0 0 2.5 0V12h2.75a1.25 1.25 0 0 0 0-2.5"
+                  ></path>
+                </svg>
+              </div>
+              <div class="invite-text">
+                <p>
+                  Invite your friends<br /><span
+                    >Connect to start chatting</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="card-container">
+           <div class="card card-3">
+          <img src="https://i.pinimg.com/236x/5a/a8/a0/5aa8a03d3728858ef988b66a59e0997a.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/236x/4f/62/d2/4f62d2bc39cb6092fe4dedb978c285c5.jpg" alt="">
+        </div>
+        <div class="card card-1">
+          <img src="https://i.pinimg.com/236x/c3/a9/5b/c3a95b0899ad71ef8e39e4d574230d36.jpg" alt="">
+        </div>
+        <div class="card card-2">
+          <img src="https://i.pinimg.com/236x/67/5c/c1/675cc13444620348190ed32ec17a4418.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/236x/8d/9c/3c/8d9c3c3477ae063d08c8f82550030277.jpg" alt="">
+        </div>
+        <div class="card card-5">
+          <img src="https://i.pinimg.com/236x/6c/55/fe/6c55fec62dc6e00a10ff276893294b2a.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/236x/84/73/2f/84732faaf55d701fd5bd1d8c20851dea.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/474x/f9/05/35/f90535028b245cab8be736b2324d3a17.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/236x/55/6a/b9/556ab99a7fa52d0f9f93bcce5428c3fa.jpg" alt="">
+        </div>
+        <div class="card card-2">
+          <img src="https://i.pinimg.com/236x/0a/9f/54/0a9f54ad596774f53f3d95aaee957a99.jpg" alt="">
+        </div>
+
+
+        <div class="card card-3">
+          <img src="https://i.pinimg.com/474x/e4/ee/7a/e4ee7af1bc77e3e87244a4ed486bd953.jpg" alt="">
+        </div>
+        <div class="card card-2">
+          <img src="https://i.pinimg.com/236x/b6/b4/ff/b6b4ffd8f6ceabb5c6b7f1b5886950a8.jpg" alt="">
+        </div>
+        <div class="card card-3">
+          <img src="https://i.pinimg.com/236x/a0/94/57/a0945733764ef6a4ea42225023190ecd.jpg" alt="">
+        </div>
+        <div class="card card-6">
+          <img src="https://i.pinimg.com/236x/1f/58/e5/1f58e53ba87297e3a84bef3575a15c13.jpg" alt="">
+        </div>
+        <div class="card card-2">
+          <img src="https://i.pinimg.com/236x/57/66/d3/5766d3fd54c1f08d3708aa7d098daf0a.jpg" alt="">
+        </div>
+        <div class="card card-1">
+          <img src="https://i.pinimg.com/236x/d9/da/4c/d9da4c4664c9b9493e54038e34e80ad3.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/236x/39/0b/7e/390b7ed60c28f8e73e6ac467f5970914.jpg" alt="">
+        </div>
+        <div class="card card-3">
+          <img src="https://i.pinimg.com/236x/f8/2e/5d/f82e5d706bce2ab91bdd0bfbf89dea43.jpg" alt="">
+        </div>
+        <div class="card card-5">
+          <img src="https://i.pinimg.com/236x/c7/7a/3b/c77a3b71eda12998f7d054ef447e8268.jpg" alt="">
+        </div>
+        <div class="card card-4">
+          <img src="https://i.pinimg.com/236x/e9/2e/b5/e92eb5ef33bc14255977adb30cd61222.jpg" alt="">
+        </div>
+      </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
